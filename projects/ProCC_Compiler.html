@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ProCC_Compiler -- Zixuan Li</title>
+  
+  <!-- Bootstrap Core CSS -->
+  <!-- 6/15/2018: Updated to the latest version of Bootstrap (4.1.1) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+  rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="../css/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link href="../css/creative.min_proj.css" rel="stylesheet">
+  
+  <!-- Index CSS -->
+  <link href="../css/index.css" rel="stylesheet">
+  
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such. -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-68657454-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link rel="stylesheet" href="../css/prism.css"/>
+</head>
+  
+<body>
+<script src="https://lizirene.github.io/js/prism.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+
+      <!-- Updated with latest Creative -->
+      <a class="navbar-brand js-scroll-trigger" href="../">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" 
+              data-toggle="collapse" data-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#description">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--  Intro Section -->
+  <header class="masthead text-center text-dark bg-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>ProCC Compiler</strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-12 mx-auto">
+          <img class="img-fluid" overflow=hidden width="100%" height="auto" src="../img/portfolio/thumbnails/ProCC_Compiler.jpg" alt="">
+        </div>
+        <br>
+        <div class="col-lg-8 mx-auto">
+          <p class="mb-5 min-padding-top">
+            It's a compiler that will be able to convert from our ProCC high-level language into the ITP-11 assembly for its <a href="Virtual_Machine.html">Virtual Machine</a>.
+          </p>
+          <p class="text-italic mb-5 min-padding-top">
+            A detailed implemented project coded in C++
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+   <!--  Description Section -->
+  <section class="min-padding-top text-center text-dark bg-light" id="description">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h3 class="text-uppercase">Description</h3>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto min-padding-top">
+          <h4 class="text-uppercase">What is a compiler? </h4>
+          <p class="text-italic mb-5">
+            "In computing, a compiler is a computer program that translates computer code written in one programming language into another language. 
+            The name "compiler" is primarily used for programs that translate source code from a high-level programming language to a lower level language to create an executable program.
+            -- Wikipedia" 
+          </p>
+          <p class="text-italic min-padding-top mb-5">
+            For this project, I did <strong>lexical analysis</strong> aka scanning and <strong>syntax analysis</strong> aka parsing to make sure series of tokens follows the grammar rules.
+            <strong>Bison</strong> is the open source version of Yacc (a Compiler Compiler) that I was using.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+     <!--  Demo Section -->
+  <section class="min-padding-top text-center text-dark bg-white" id="demo">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h3 class="text-uppercase">Features and Demo</h3>
+          <hr>
+        </div>
+                
+<!--         First generating the AST -->
+        <div class="col-lg-8 mx-auto min-padding-top">
+           <h4 class="text-uppercase">First Step </h4>
+          <p>
+            I familiarized myself with the Bison grammar used in the input files and <strong>generated the AST</strong>
+            (syntax tree, a tree representation of the abstract syntactic structure of source code written in a programming language) 
+            for the Bison code structures.
+          </p>
+          <div class="row mb-5" style="text-align:center">
+            <div style="width:100%;height:200px;overflow:scroll;margin:10px">
+              <pre>
+               <code class="language-cpp">
+              	// Testing if statement
+				data {
+					var abc;
+					var x;
+					array myarr[5];
+				}
+				main {
+					abc = 20;
+					myarr[0] = 20;
+					if abc == myarr[0] {
+						abc = 15;
+					}
+					
+					if abc < 37 {
+						x = 1;
+					} else {
+						x = 0;
+					}
+				}
+               </code>
+              </pre>
+            </div>
+            <div style="width:100%"><p>input file</p></div>
+            <div style="width:100%;height:200px;overflow:scroll;margin:10px">
+             <pre>
+             <code class="language-cpp">
+             	%error-verbose
+
+				/* Tokens/Terminal symbols */
+				%token <token> TDATA TMAIN TLBRACE TRBRACE TSEMI TLPAREN TRPAREN
+				%token <token> TLBRACKET TRBRACKET TINC TDEC TEQUALS
+				%token <token> TADD TSUB TMUL TDIV
+				%token <token> TLESS TISEQUAL
+				%token <token> TVAR TARRAY
+				%token <token> TIF TELSE TWHILE
+				%token <token> TCOMMA TPENUP TPENDOWN TSETPOS TSETCOLOR TFWD TBACK TROT
+				%token <string> TINTEGER TIDENTIFIER
+				
+				/* Types/non-terminal symbols */
+				%type <program> program
+				%type <data> data decls
+				%type <decl> decl
+				%type <numeric> numeric
+				%type <statement> statement
+				%type <block> block main
+				%type <comparison> comparison
+				%type <expr> expr
+				
+				/* Operator precedence */
+				%left TADD TSUB
+				%left TMUL TDIV
+
+				%%
+				
+				program		: data main 
+								{ 
+									$$ = new NProgram($1, $2);
+									gProgram = $$;
+									std::cout << "Program\n";
+								}
+				;
+				
+				data		: TDATA TLBRACE TRBRACE
+								{
+									$$ = new NData();
+									std::cout << "Data (no decls)\n";
+								}
+							| TDATA TLBRACE decls TRBRACE
+								{
+									$$ = $3;
+									std::cout << "Data\n";
+								}
+				
+				;
+
+				decls		: decl 
+								{
+									$$ = new NData();
+									$$->AddDecl($1);
+									std::cout << "Single decl\n";
+								}
+							| decls decl
+								{
+									$$->AddDecl($2);
+									std::cout << "Multiple decls\n";
+								}
+				;
+				
+				decl		: TVAR TIDENTIFIER TSEMI
+								{
+									$$ = new NVarDecl(*($2));
+									std::cout << "Var declaration " << *($2) << '\n';
+								}
+							| TARRAY TIDENTIFIER TLBRACKET numeric TRBRACKET TSEMI
+								{
+									$$ = new NArrayDecl(*($2), $4);
+									std::cout << "Array declaration " << *($2) << '\n';
+								}
+				;
+
+				main		: TMAIN TLBRACE block TRBRACE
+								{
+									$$ = $3;
+									std::cout << "Main{ block }\n";
+								}
+							| TMAIN TLBRACE TRBRACE
+								{
+									$$ = new NBlock();
+									std::cout << "Main (no stmts)\n";
+								} 
+				;
+             </code>
+             </pre>
+            </div>
+            <div style="width:100%"><p>syntax tree(snippet)</p></div>
+          </div>
+        </div>
+<!--         next generating nodes -->
+        <div class="col-lg-8 mx-auto min-padding-top">
+           <h4 class="text-uppercase">Next </h4>
+          <p>
+            I add the code to <strong>generate ITP-11 assembly code</strong> and finish <strong>register allocation</strong> with linear scan.
+          </p>
+          <div class="row mb-5" style="text-align:center"">
+            <div style="margin:10px;height:200px;width:100%;overflow:scroll">
+              <pre>
+              	<code class="language-cpp">
+              		void NArrayDecl::CodeGen(CodeContext& context)
+					{
+					    for(int i = 0; i < mSize->GetValue(); ++i){
+					        context.mOps.emplace_back(Instruction("push",{"r0"}));
+					    }
+					    context.varToIdx.insert(std::make_pair(mName, context.getStackNext()));
+					}
+					
+					void NNumericExpr::CodeGen(CodeContext& context)
+					{
+					    mResultRegister = context.GetNextTempReg();
+					    context.mOps.emplace_back(Instruction("movi", {mResultRegister, std::to_string(mNumeric->GetValue())}));
+					}
+					
+					void NVarExpr::CodeGen(CodeContext& context)
+					{
+					    mResultRegister = context.GetNextTempReg();
+					    context.mOps.emplace_back(Instruction("loadi", {mResultRegister, std::to_string(context.varToIdx[mName])}));
+					}
+              	</code>
+              </pre>
+            </div>
+            <div style="width:100%"><p>generate ITP-11 assembly code(snippet)</p></div>
+            <div style="width:100%;height:200px;overflow:scroll;margin:10px">
+            	<pre>
+            		<code class="language-cpp">
+            		push r0
+					push r0
+					push r0
+					push r0
+					push r0
+					push r0
+					push r0
+					push r0
+					movi r1,5
+					storei 1,r1
+					movi r1,0
+					storei 0,r1
+					movi r1,100
+					storei 2,r1
+					movi r1,110
+					movi r2,105
+					mov tx,r1
+					mov ty,r2
+					pendown 
+					loadi r1,0
+					loadi r2,1
+					cmplt r1,r2
+					movi r1,37
+					jnt r1
+					loadi r1,0
+					movi r2,1
+					add r1,r1,r2
+					mov tc,r1
+					loadi r1,2
+					fwd r1
+					movi r1,144
+					add tr,tr,r1
+					loadi r1,0
+					inc r1
+					storei 0,r1
+					movi r1,19
+					jmp r1
+					penup 
+					movi r1,0
+					back r1
+					exit 
+            		</code>
+            	</pre>
+            </div>
+            <div style="width:100%"><p>lower level language for <a href="Virtual_machine.html">Virtual Machine</a>(snippet)</p></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <br>
+  <!--  THIS IS THE FOOTER - displays a copyright notice and
+          that Bootstrap powers this web page. -->
+    <div class="container bg-light min-padding-top">
+      <p class="text-center text-muted text-small mb-1">
+        Zixuan Li &copy; 2020. All rights reserved.
+        Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
+      </p>
+      <p class="text-center text-muted text-small">
+        Theme based on the
+        <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
+        by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
+      </p>
+    </div>
+
+    <!-- Updated jQuery, added Popper.js, and updated Bootstrap JS to 4.1.1 -->
+    <!-- Also pulling in the Bootstrap 4 update from Start Bootstrap too
+         https://github.com/BlackrockDigital/startbootstrap-creative  -->
+
+    <!-- jQuery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4.1 JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Plugin & Theme JavaScript (With Bootstrap 4 Update) -->
+    <script src="https://lizirene.github.io/js/jquery.easing.min.js"></script>
+    <script src="https://lizirene.github.io/js/scrollreveal.min.js"></script>
+    <script src="https://lizirene.github.io/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://lizirene.github.io/js/creative.min.js"></script>
+
+  </body>
+</html>
