@@ -200,9 +200,9 @@ ul.ul-edu li .description p.institution {
     text-align: center
   }
 
-  /*update all blue to orange #f05f40*/
+  /*update all blue to orange #578fea*/
   .text-orange {
-    color: #f05f40;
+    color: #578fea;
     border-bottom: 1px solid currentColor;
   }
 
@@ -213,7 +213,7 @@ ul.ul-edu li .description p.institution {
 
   /* Link color when it is unvisited */
   a.text-blue:link {
-    color: #f05f40;
+    color: #578fea;
     border-bottom: 1px solid currentColor;
   }
 
@@ -224,7 +224,7 @@ ul.ul-edu li .description p.institution {
 
   /* Link color after being clicked on and visited */
   a.text-blue:visited {
-    color: #f05f40;
+    color: #578fea;
     border-bottom: 1px solid currentColor;
   }
 
@@ -235,20 +235,20 @@ ul.ul-edu li .description p.institution {
 
   /* Link color while being hovered on */
   a.text-blue:hover {
-    color: #f05f40;
+    color: #578fea;
     border-bottom: 1px solid currentColor;
     text-decoration: none;
   }
 
   a.text-white-link:hover {
-    color: #f05f40;
+    color: #578fea;
     border-bottom: 1px solid currentColor;
     text-decoration: none;
   }
 
   /* Link color the moment it is clicked */
   a.text-blue:active {
-    color: #f05f40;
+    color: #578fea;
     border-bottom: 1px solid currentColor;
   }
 
