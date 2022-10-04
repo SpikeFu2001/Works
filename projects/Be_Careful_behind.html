@@ -60,10 +60,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#description">Description</a>
+                        <a class="nav-link js-scroll-trigger" href="#CharacterContent">Description</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
+                        <a class="nav-link js-scroll-trigger" href="#EnviromentContent">Demo</a>
                     </li>
                 </ul>
             </div>
@@ -77,21 +77,18 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <h1 class="text-uppercase">
-                        <strong>Catch That Puppo</strong>
+                        <strong>Be careful! Begind The Scenes </strong>
                     </h1>
                     <hr>
                 </div>
                 <div class="col-lg-12 mx-auto">
                     <img class="img-fluid" overflow=hidden width="40%" height="auto"
-                        src="../img/portfolio/thumbnails/CatchThatPuppoCover.png" alt="">
+                        src="../img/portfolio/thumbnails/LuluDesign.jpg" alt="">
                 </div>
                 <br>
                 <div class="col-lg-10 mx-auto ">
                     <p class="mb-5">
-                        A remake of super classic <strong>Mario Kart</strong>.
-                    </p>
-                    <p class="text-italic mb-5">
-                        A 3D platformer game coded in C++
+                        Behind scene look of <strong>Be careful!</strong>.
                     </p>
                 </div>
             </div>
@@ -103,24 +100,34 @@
         <div id="expander" data-target="#CharacterContent" data-toggle="collapse" data-group-id="Character"
             data-role="expander">
             <ul class="list-inline">
-                <li class="list-inline-item" id="CharacterIcon">&gt;</li>
-                <li class="list-inline-item">Character</li>
+                <li class="list-inline-item">
+                    <h3 id="CharacterIcon">v</h3>
+                </li>
+                <li class="list-inline-item">
+                    <h3>Character</h3>
+                </li>
             </ul>
         </div>
-        <div class="collapse" id="CharacterContent" aria-expanded="true">
+        <div class="collapse show" id="CharacterContent" aria-expanded="true">
             <section class="min-padding-top div-padding-fix text-center text-dark bg-light" , id="description">
                 <div class="container-fluid">
                     <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <h5 class="text-uppercase">Model View</h5>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
                         <style>
                             model-viewer {
-                                width: 80vw;
-                                height: 60vh;
+                                width: 90vw;
+                                height: 80vh;
                             }
                         </style>
                         <div class="mx-auto list-group-item">
-                            <model-viewer skybox-image="../img/spruit_sunrise_4k.hdr"
-                                alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-                                src="../models/test.glb" shadow-intensity="1" camera-controls touch-action="pan-y">
+                            <model-viewer skybox-image="../img/umhlanga_sunrise_4k.hdr" poster="../img/Character.png"
+                                alt="" src="../models/Character.glb" shadow-intensity="1" camera-controls
+                                touch-action="pan-y">
                             </model-viewer>
                         </div>
                     </div>
@@ -129,30 +136,40 @@
         </div>
     </div>
 
-    <!--  Demo Section -->
-    <div class="list-group-item text-center bg-white" id="demo">
-        <div id="expander" data-target="#demoContent" data-toggle="collapse" data-group-id="demo" data-role="expander">
-            <ul class="list-inline ">
-                <li class="list-inline-item" id="demoIcon">&gt;</li>
-                <li class="list-inline-item">Demo</li>
+    <!--  Enviroment Section -->
+    <div class="list-group-item text-center bg-white" id="Enviroment">
+        <div id="expander" data-target="#EnviromentContent" data-toggle="collapse" data-group-id="Enviroment"
+            data-role="expander">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <h3 id="EnviromentIcon">v</h3>
+                </li>
+                <li class="list-inline-item">
+                    <h3>Enviroment</h3>
+                </li>
             </ul>
         </div>
-        <div class="collapse" id="demoContent" aria-expanded="true">
-            <section class="min-padding text-center text-black bg-white" , id="demo">
+        <div class="collapse show" id="EnviromentContent" aria-expanded="true">
+            <section class="min-padding-top div-padding-fix text-center text-dark bg-light" , id="description">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <h3 class="text-uppercase">Features and Demo</h3>
+                            <h5 class="text-uppercase">Model View</h5>
                             <hr>
                         </div>
-                        <div class="col-lg-8 mx-auto">
-                            <p class="mb-5">
-                                Our AI enemy is moving faster than us! HURRY UPPPP!
-                            </p>
-                            <div class="col-lg-12 mx-auto">
-                                <iframe src="https://player.vimeo.com/video/457168224" width="100%" height="auto"
-                                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <style>
+                            model-viewer {
+                                width: 90vw;
+                                height: 80vh;
+                            }
+                        </style>
+                        <div class="mx-auto list-group-item">
+                            <model-viewer skybox-image="../img/solitude_night_4k.hdr" poster="../img/Enviroment.png"
+                                alt="" src="../models/Enviroment.glb" shadow-intensity="1" camera-controls
+                                touch-action="pan-y">
+                            </model-viewer>
                         </div>
                     </div>
                 </div>
