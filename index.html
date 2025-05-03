@@ -42,22 +42,11 @@
   <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
   <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
   <script src="js/isotope.pkgd.min.js"></script>
-  <!-- Google Analytics Tracking Tag. Track how people access my site and such. -->
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-68657454-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f8f9fa;" id="mainNav">
     <div class="container">
 
       <!-- Updated with latest Creative -->
@@ -94,8 +83,7 @@
   <!--  Intro Section -->
   <section class="text-center bg-white">
     <div class="container">
-      <img src="img/portfolio/thumbnails/avatar.jpg" alt="Avatar"
-        style="width:200px;height:200px;margin-top:5%;margin-bottom:5%">
+      <img src="img/portfolio/thumbnails/Spike_photo.jpg" alt="Avatar" class="responsive-img jump-hover">
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-uppercase">
@@ -104,13 +92,29 @@
           <hr>
         </div>
         <div class="col-md-12">
+          <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+            <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Game Developer</button>
+          </span>
+          <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+            <button class="btn btn-info" style="pointer-events: none;" type="button" disabled>Technical Artist</button>
+          </span>
+          <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+            <button class="btn btn-success" style="pointer-events: none;" type="button" disabled>Creative Coder</button>
+          </span>
+          <hr style="background-color: #ffffff; border: none; ">
           <p class="mb-5">
             Hey there! Thanks for checking me out!<br>
             My name is Spike Fu, or my Chinese name Meiwen Fu.<br>
             I have B.S. in Computer Science Games, <br>
             M.S. in Computer Science and <br>
             Minor in East Asian Languages and Cultures<br>
-            from the University of Southern California.<br><br>
+            from the University of Southern California.<br>
+            <br>
+            I am a game dev who do both code and arts, <br>
+            with strong background in 3D asset creation and pipeline support.<br>
+            <br>
+            I am also passionate about production and community outreach. <br>
+            I love teaching and fostering the next generation of game developers.<br>
 
           </p>
           <!-- interests and education -->
@@ -175,12 +179,14 @@
               <div class="timeline-arrow"></div>
               <h2 class="h5 mb-0">Lead Technical Artist at Easley-Dunn Productions</h2><span class="small text-gray"><i
                   class="fa fa-clock-o mr-1"></i>Jan 2025 - Present</span>
-              <br /><img alt="Easley-Dunn Productions Logo" src="img/experiences/easley_dunn_productions_logo.jpg" height="70">
+              <br /><img alt="Easley-Dunn Productions Logo" src="img/experiences/easley_dunn_productions_logo.jpg"
+                height="70">
               <br /><br>
               <p><strong>Leading 3d in-game level environment improvements of mobile game Robot Race.</strong></p>
               <ul>
                 <li>Oversee the integration of 3D models, textures, animations, and VFX into game engines.</li>
-                <li>Diagnose and resolve technical challenges related to performance, lighting, physics, and rendering.</li>
+                <li>Diagnose and resolve technical challenges related to performance, lighting, physics, and rendering.
+                </li>
                 <li>Implement model, shader, and animation improvemnts in Unity engine.</li>
               </ul>
             </li>
@@ -194,9 +200,11 @@
               <br /><br>
               <p><strong>Developed skills in Pipeline, XR, ML, and Avatar Tech.</strong></p>
               <ul>
-                <li>Designed and developed real-time hand tracking feature for XR product using MediaPipe and OpenGL.</li>
+                <li>Designed and developed real-time hand tracking feature for XR product using MediaPipe and OpenGL.
+                </li>
                 <li>Streamlined the maintenance, auditing, and release processes for internal art assets.</li>
-                <li>Enabled rapid deployment of art assets by standardizing the internal database and optimizing pipeline workflows</li>
+                <li>Enabled rapid deployment of art assets by standardizing the internal database and optimizing
+                  pipeline workflows</li>
                 <li>Procedurally generated art assets in Houdini for AI driven humanoid auto-rigging</li>
                 <li>Assisted training data preparation pipeline for AI driven facial auto-rigging</li>
               </ul>

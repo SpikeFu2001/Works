@@ -118,6 +118,64 @@ ul.ul-edu li .description p.institution {
   margin: 10px
 }
 
+.responsive-img {
+  width: 100%;
+  max-width: 400px;
+  /*Optional:;
+  preventsitfrombeingtoolargeonbigscreens*/
+  height: auto;
+  /*Keepstheaspectratio*/
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /*Softshadow*/
+  transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+}
+
+/* Add jump effect on hover */
+.jump-hover:hover {
+  animation: jump 0.4s ease;
+}
+
+.btn {
+  border-radius: 5%;
+  padding: 5px;
+  margin: 3px;
+  text-transform: none;
+  color: #fff !important;
+}
+
+/* Keyframes for jumping motion */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .grid-card {
     width: calc(50% - 20px)
@@ -271,9 +329,6 @@ ul.ul-edu li .description p.institution {
     padding-bottom: 2em;
   }
 
-  .btn {
-    padding: 5px;
-  }
 
   /* Black hrefs & hrs too */
   .href-black {
@@ -318,3 +373,5 @@ ul.ul-edu li .description p.institution {
     width: 30%;
     height: 30%;
   }
+
+}
